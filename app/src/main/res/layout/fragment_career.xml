@@ -1,0 +1,244 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <include layout="@layout/material_view_pager_placeholder" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+
+                 android:visibility="gone">
+
+
+    </FrameLayout>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/card_view"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/cardMarginVertical"
+                                        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+                                        android:layout_marginRight="@dimen/cardMarginHorizontal"
+                                        android:layout_marginTop="@dimen/cardMarginVertical"
+                                        android:paddingBottom="10dp"
+                                        app:cardCornerRadius="2dp"
+                                        app:cardElevation="2dp"
+                                        app:cardBackgroundColor="@color/cv_bgcolor"
+
+                                        app:cardPreventCornerOverlap="false"
+                                        app:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TV_Championship"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/cv_textcolor"
+
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+
+            android:text="@string/championships" />
+
+        <TextView
+            android:id="@+id/TV_ChampionshipNumber"
+            android:textColor="@color/cv_textcolor"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/TV_Championship"
+            android:layout_toEndOf="@+id/TV_Championship"
+
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="( ## )" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RV_Championship"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/TV_Championship"
+        android:elevation="2dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="15dp"
+        android:paddingRight="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/TV_MVP"
+            android:textColor="@color/cv_textcolor"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/mvp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/TV_ChampionshipNumber"
+            android:layout_toEndOf="@+id/TV_ChampionshipNumber"/>
+
+        <TextView
+            android:id="@+id/TV_MVPNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cv_textcolor"
+
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="( ## )"
+            android:layout_above="@+id/RV_MVP"
+            android:layout_toRightOf="@+id/TV_MVP"
+            android:layout_toEndOf="@+id/TV_MVP"/>
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/RV_MVP"
+        android:layout_width="346dp"
+        android:layout_height="28dp"
+        android:elevation="2dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+
+        android:layout_alignBottom="@+id/RV_Championship"
+        android:layout_alignLeft="@+id/TV_MVP"
+        android:layout_alignStart="@+id/TV_MVP"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/TV_Allstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:textColor="@color/cv_textcolor"
+
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/allstars"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="99dp"
+                android:layout_marginStart="99dp"/>
+
+            <TextView
+                android:id="@+id/TV_AllstarNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/cv_textcolor"
+
+                android:layout_toRightOf="@+id/TV_Allstar"
+                android:layout_toEndOf="@+id/TV_Allstar"
+
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="( ## )"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RV_AllStar"
+            android:layout_width="346dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/tvTitleV"
+            android:elevation="2dp"
+
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RV_bio"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fake"
+        android:elevation="2dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+
+        android:layout_weight="0.34"/>
+
+</LinearLayout>

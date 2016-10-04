@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cv_bgcolor"
+    tools:context=".fragments_fav.FavShoesFragment">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_shoes"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:fadingEdgeLength="50dp"
+            android:requiresFadingEdge="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/empty_shoes"
+            android:visibility="invisible"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_empty"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">All Star Shoes Workouts</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="addFTs">Add FreeThrows</string>
+    <string name="search">Search All-Stars</string>
+
+    <string name="action_search">Search</string>
+
+    <string name="one">ONE</string>
+    <string name="eight">EIGHT</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="nine">NINE</string>
+    <string name="seven">SEVEN</string>
+    <string name="six">SIX</string>
+    <string name="ten">TEN</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+    <string name="action_new">Settings</string>
+    <string name="logo_desc">App logo</string>
+    <string name="country_name">Nigeria</string>
+    <string name="title_activity_scrollable_tabs">Scrollable Tabs</string>
+    <string name="title_activity_simple_tabs">Simple Tabs</string>
+    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_scrollable_tabs">Scrollable Tabs</string>
+    <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Only Icon Tabs</string>
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="title_activity_icon_text_tabs">Icon and Text Tabs</string>
+    <string name="title_activity_icon_tabs">Icon Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="top_of_today_shots_text">TODAYS SHOT HISTORY</string>
+
+    <string name="faketext">blah blagdafskokmafmfasmsafkmadfskmpkadfskmpoadfskmodafsakmdsflkmkmldfskmldfskmldsfkmldsflkmlkmadfskmlsdfalmksafmdkmkdafskmdfaskmkdfskmsdafkmkmadfskmsdfmkmksdafmkadfsmksadfkmkmsdafmksadfkmdafskmkmsadfmkdfaskmmdafsmkfdskmdfkmsadfs</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="championships">Championships</string>
+    <string name="allstars">All Star Games</string>
+    <string name="mvp">MVP</string>
+
+    <!-- Main screen -->
+    <string name="activity_main_vertical_linear_sample_button">Vertical Linear Sample</string>
+    <string name="activity_main_horizontal_linear_sample_button">Horizontal Linear Sample</string>
+    <string name="activity_main_grid_sample_button">Grid Layout Sample</string>
+    <string name="activity_main_header">Expanding RecyclerView</string>
+    <string name="coming_soon">Feature coming soon</string>
+
+    <!-- Linear sample -->
+    <string name="activity_vertical_linear_sample_title">Vertical Linear Sample</string>
+    <string name="activity_horizontal_linear_sample_title">Horizontal Linear Sample</string>
+    <string name="toolbar_sample_checkBox">Custom Expand Button</string>
+    <string name="child_text">Child %1$d</string>
+    <string name="second_child_text">Child %1$d_2</string>
+    <string name="third_child_text">Child %1$d_3</string>
+    <string name="child_insert_text">Child of inserted #%1$d</string>
+    <string name="parent_text">Parent %1$d</string>
+    <string name="inserted_parent_text">Inserted Parent</string>
+    <string name="arrow_contentDescription">Expand list item arrow</string>
+    <string name="item_expanded">Item %1$d expanded</string>
+    <string name="item_collapsed">Item %1$d collapsed</string>
+    <string name="expand_parent_two">Expand parent 2</string>
+    <string name="collapse_parent_two">Collapse parent 2</string>
+    <string name="expand_all">Expand all parents</string>
+    <string name="collapse_all">Collapse all parents</string>
+    <string name="add_item_to_end">Add parent to end</string>
+    <string name="remove_item_from_end">Remove parent from end</string>
+    <string name="add_item_at_pos_two">Add parent @ pos 1</string>
+    <string name="remove_second_pos">Remove parent @ pos 1</string>
+    <string name="add_child">Add child to end of 2nd parent</string>
+    <string name="remove_child">Remove child on 2nd parent from pos 1</string>
+    <string name="added_child">Child Addition %1$d</string>
+    <string name="add_multiple_parents">Add 2 Parents @ pos 1</string>
+    <string name="modify_last_parent">Modify last Parent</string>
+    <string name="modify_last_child">Modify last Child</string>
+    <string name="modified_parent_text">modified %1$d</string>
+    <string name="modified_child_text">modified Child %1$d</string>
+    <string name="expand_range">Expand parents 4–6</string>
+    <string name="collapse_range">Collapse parents 2–5</string>
+    <string name="add_two_children">Add two children to last parent</string>
+    <string name="remove_two_children">Remove two children from last parent</string>
+    <string name="modify_two_children">Modify two children from last parent</string>
+    <string name="remove_two_parents">Remove last two Parents</string>
+    <string name="modify_two_parents">Modify last two Parents</string>
+    <string name="parent_move">Move parent @ pos 1 to pos 3</string>
+    <string name="child_move">On Parent @ pos 1, move child from pos 0 to end</string>
+
+
+    <string name="collapsed">collapsed: %s</string>
+    <string name="expanded">expanded: %s</string>
+
+    <string name="empty_shoes">You haven\'t added any shoes to your favorites</string>
+
+    <!-- Sample Toolbar -->
+    <string name="no_animation">No animation</string>
+    <string name="spinner_adapter_time_s">1 s</string>
+    <string name="spinner_adapter_time_ms">%1$d ms</string>
+
+
+
+    <string name="bio_kobe">Kobe Bryant shows us what it means to leave a true legacy as he will without question be a first ballot Hall of Famer.\n
+        He shows us what it means to have aggression and how to use it for our benefit with over 30,000 career points scored.\n
+        He shows us what it means to have no days off with countless hours of hard work put in and off the court.\n
+        In many of his most loyal fan’s eyes, he will go down as the greatest basketball player of all time. </string>
+    <string name="bio_jordan">
+By acclamation, Michael Jordan is the greatest basketball player of all time. However, his impact is far greater than awards and championships.
+        He burst into the league as a rookie sensation scoring in droves with an unmatchable first step and acrobatic drives and dunks and concluded his career as a cultural icon.
+        Along the way, he became a true champion who spearheaded the globalization of the NBA with his dynamic on court abilities and personal sense of style that was marketed to the masses.
+
+    </string>
+        <string name="bio_lebron">
+With three championships, James has secured his legacy as one of the game’s all-time great champions. \n Yes, there are some who have more than he does, but James has completely transformed the game. \nHe also engineered the greatest comeback in NBA Finals history, as the Cleveland Cavaliers became the only team\n to come back and win after being down 3-1.
+
+            </string>
+        <string name="bio_curry">
+Since returning from career-threatning injuries in 2012, Curry has embarked on one of the greatest runs in sports history. \n Without a doubt, the greater shooter of all time, he has broken records every season.
+
+        </string>
+        <string name="bio_durant">
+            After 8 seasons in Oklahoma City, in which Durant led the NBA in scoring 4 times, the sharpshooter decided to join the Golden State Warriors. \n  He will join a record-breaking team that already features an abundance of talent.
+
+
+        </string>
+        <string name="bio_rose">
+Derrick Rose will try to revitalize his career and the Knicks’ woeful point-guard situation at the same time. \n  After becoming the youngest NBA MVP in history at age 22, injuries have eventually broken him and his hometown Chicago Bulls apart.
+
+
+        </string>
+</resources>

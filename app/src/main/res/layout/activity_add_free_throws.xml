@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relative"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/FreeThrowResults"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/result"
+        android:layout_toEndOf="@+id/result"
+        android:longClickable="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="5"
+        android:maxLength="4"
+        android:id="@+id/FT_makes"
+        android:hint=""
+        android:gravity="center"
+        android:layout_below="@+id/address_label"
+        android:layout_toRightOf="@+id/minus_attempts"
+        android:layout_toEndOf="@+id/minus_attempts"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="5"
+        android:id="@+id/FT_attempts"
+        android:maxLength="4"
+        android:layout_marginTop="61dp"
+        android:hint=""
+        android:gravity="center"
+
+
+        android:layout_below="@+id/FT_makes"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:id="@+id/add_input"
+        android:background="@drawable/bluebutton"
+        android:layout_below="@+id/FT_attempts"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/top_of_today_shots_text"
+        android:id="@+id/array_text"
+        android:textStyle="bold"
+        android:layout_below="@+id/add_input"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/hello_world"
+        android:id="@+id/shot_percentage"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/add_input"
+        android:layout_toLeftOf="@+id/FT_attempts"
+        android:layout_toStartOf="@+id/FT_attempts"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/plus_makes"
+        android:clickable="true"
+        android:background="@color/green"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/FT_makes"
+        android:layout_toRightOf="@+id/FT_makes"
+        android:layout_toEndOf="@+id/FT_makes"
+        android:elevation="20dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minus_makes"
+        android:elevation="20dp"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/FT_makes"
+        android:layout_toLeftOf="@+id/FT_makes"
+        android:layout_toStartOf="@+id/FT_makes"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minus_attempts"
+        android:elevation="20dp"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/FT_attempts"
+        android:layout_toLeftOf="@+id/FT_attempts"
+        android:layout_toStartOf="@+id/FT_attempts"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/plus_attempts"
+        android:clickable="true"
+        android:elevation="20dp"
+
+        android:layout_alignBottom="@+id/FT_attempts"
+        android:layout_toRightOf="@+id/FT_attempts"
+        android:layout_toEndOf="@+id/FT_attempts"/>
+
+    <TextView
+        android:id="@+id/address_label"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAKES"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/plus_makes"
+        android:layout_toStartOf="@+id/plus_makes"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ATTEMPTS"
+        android:id="@+id/textView2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_above="@+id/minus_attempts"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/plus_attempts"
+        android:layout_toStartOf="@+id/plus_attempts"/>
+
+
+</RelativeLayout>

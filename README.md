@@ -1,5 +1,3 @@
-# all-star-shoes-workouts
-
 # All Star Shoes Workouts
 ### Libraries Used
 * Glide
@@ -11,4 +9,3 @@
 * Picasso
 * Hdodenhof CircleImageView 
 * Hawk
-* 
